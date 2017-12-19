@@ -1,0 +1,218 @@
+/*
+* 
+* @author Jamilton Damasceno
+* @version 0.1
+*/
+
+
+/* ========================= layout ======================== */
+
+html,
+body,
+.capa {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background: url('imagens/capa.png'), url('imagens/ruido.png'), linear-gradient(90deg, black, skyblue);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* -- Barra de navegação -- */
+
+.img-logo {
+    height: 40px;
+    width: 132px;
+    display: block;
+    background: url('imagens/spotify.svg') no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+
+nav.navbar-transparente {
+    padding: 15px 0px;
+    background: rgba(10, 0, 0, 0.6);
+    border: none;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+}
+
+.divisor {
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #3ac0e6;
+}
+
+
+/* -- Imagem de capa -- */
+
+.capa {
+    display: table;
+    width: 100%;
+}
+
+.texto-capa {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* -- Botoes -- */
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    margin: 10px 15px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo {
+    background: #7c25f8;
+}
+
+.btn-roxo:hover {
+    background-color: #6207e3;
+    color: white;
+}
+
+.btn-branco {
+    border: 2px solid white;
+}
+
+.btn-branco:hover {
+    background-color: white;
+    box-shadow: 6px 6px 10 0px 40px rgba(0, 0, 0, 0.5);
+    border: 2px solid black: color: black;
+}
+
+
+/* ========================= Tipografia ======================== */
+
+h1 {
+    text-shadow: 6px 6px 8px 2px rgba(0, 0, 0, 0.5);
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
+
+#servicos {
+    background: white;
+    padding: 20px 0px 20px 0px;
+}
+
+#servicos img {
+    margin: 20px;
+}
+
+#servicos img:hover {
+    -webkit-transform: scale(1.5);
+    -webkit-transition: 1.2s;
+}
+
+#servicos h3 {
+    color: blueviolet;
+    width: 50px;
+    width: 50px;
+    font-size: 30px;
+}
+
+#servicos h2 {
+    margin-bottom: 40px;
+    color: blueviolet;
+    font-size: 50px;
+}
+
+#servicos p {
+    font-size: 23px;
+}
+
+#recursos {
+    padding: 20px 0px 20px 20px;
+}
+
+#recursos h2 {
+    color: white;
+    font-size: 65px;
+    margin-bottom: 60px;
+}
+
+#recursos h3 {
+    text-shadow: 6px 6px 2px black;
+    color: powderblue;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#recursos p {
+    color: blanchedalmond;
+    font-size: 30px;
+}
+
+.rodar {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding: 0px;
+    padding-left: 80px;
+    -ms-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.rodar img:hover {
+    -webkit-transform: scale(1.4);
+    -webkit-transition: 1.2s;
+}
+
+.rodape {
+    background: black;
+    padding: 50px 0px 50px 0px;
+    position: relative;
+}
+
+.item-rede-social {
+    float: right;
+}
+
+.rodape:li {
+    color: white;
+    background: none;
+}
+
+.rodape li a:hover {
+    background: none;
+    color: aqua;
+}
+
+.rodape h4 {
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 720px) {
+    .texto-capa h1 {
+        color: black;
+        font-size: 100px;
+    }
+}

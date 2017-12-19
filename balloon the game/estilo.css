@@ -1,0 +1,33 @@
+img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+
+}
+img:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+#cronometro{
+    font-size: 65px;
+    color: wheat;
+    text-align: center;
+    padding-left: 15px;
+    text-shadow: 5px 5px 5px black;
+}
+#baloes_inteiros{
+    font-size: 40px;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+#baloes_estourados{
+    font-size: 40px;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+table, tr, td {
+    border: none;
+}

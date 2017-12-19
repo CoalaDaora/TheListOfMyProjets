@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estourando balões</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script language='Javascript'>
+        function startGame() {
+            var level = document.getElementById('level-game').value;
+
+            window.location.href = 'jogo.html?' + level;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <!--Inicio do seletor de dificuldade-->
+        <p>
+            <b>Nível: </b>
+            <select id="level-game">
+                   <option value="1">Chupeta no Açucar</option>
+                   <option value="2">Sem Originalidade</option>
+                   <option value="3">Boss Type God</option>
+               </select>
+        </p>
+        <br/>
+        <img src="imagens/play.png" onclick="startGame()" />
+    </div>
+    <!--Final do seletor de dificuldade-->
+</body>
+
+</html>
